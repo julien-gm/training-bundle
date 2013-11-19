@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('bundles/smiletraining/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/smiletraining/css/bootstrap-theme.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/smiletraining/css/custom.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/smiletraining/js/bootstrap.min.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-fixed-top navbar-smile" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Symfony2 training</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                {% block navbar %}
+                    <li><a href="#">Sample link #1</a></li>
+                    <li><a href="#">Sample link #2</a></li>
+                {% endblock %}
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="container container-smile">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>{{ block('title') }}</h1>
+                {{ block('content') }}
+            </div>
+            <div class="col-md-4">
+                {{ block('sidebar') }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

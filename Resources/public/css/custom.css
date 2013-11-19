@@ -1,0 +1,22 @@
+body {
+    background-image: url('../img/smile-watermark.png');
+    background-repeat: repeat;
+    background-color: #f4f4f2;
+}
+.navbar-smile {
+    background: linear-gradient(to bottom,rgba(238,140,91,1) 0%,rgba(235,116,59,1) 50%,rgba(232,93,26,1) 53%,rgba(232,93,26,1) 100%);
+    border:0;
+}
+.navbar-smile a, .navbar-smile span {
+    color: #fff;
+}
+
+.navbar-smile li>a:hover, .navbar-smile li>a:focus {
+    text-decoration: none;
+    color: #556f7c;
+    background: #fefefe;
+}
+
+.container-smile {
+    padding-top:40px;
+}
