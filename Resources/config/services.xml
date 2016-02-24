@@ -18,6 +18,8 @@
             <tag name="data_collector" template="@SmileTraining/Collector/logo.html.twig" id="smile_logo" priority="256" />
         </service>
 
-        <service id="smile_training.faker" class="%smile_training.faker.class%" public="true" factory-class="%smile_training.faker.factory.class%" factory-method="create" />
+        <service id="smile_training.faker" class="%smile_training.faker.class%" public="true">
+            <factory class="%smile_training.faker.factory.class%" method="create" />
+        </service>
     </services>
 </container>

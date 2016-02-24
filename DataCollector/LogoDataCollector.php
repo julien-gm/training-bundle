@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 class LogoDataCollector implements DataCollectorInterface
 {
     /**
-     * @var boolean
+     * @var bool
      */
     private $trainingMode;
 
@@ -31,11 +31,11 @@ class LogoDataCollector implements DataCollectorInterface
      */
     public function getName()
     {
-        return "smile_logo";
+        return 'smile_logo';
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function getTrainingMode()
     {

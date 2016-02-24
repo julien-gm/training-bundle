@@ -1,3 +1,0 @@
-smile_training_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: SmileTrainingBundle:Default:index }
