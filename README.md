@@ -1,4 +1,4 @@
-# Smile Symfony2 training bundle
+# Smile Symfony training bundle
 
 ## About
 
